@@ -1,0 +1,6 @@
+---
+description: Pipeline for Gigamon Ami logs.
+processors:
+  - set:
+      field: ecs.version
+      value: '8.11.0'
