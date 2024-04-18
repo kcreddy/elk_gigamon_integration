@@ -4,3 +4,7 @@ processors:
   - set:
       field: ecs.version
       value: '8.11.0'
+  - rename:
+      field: json
+      target_field: gigamon.ami.ami
+      if: ctx.json != null

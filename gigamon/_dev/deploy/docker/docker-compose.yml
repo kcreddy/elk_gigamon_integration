@@ -1,6 +1,6 @@
 version: "2.3"
 services:
- gigamon-ami-http-endpoint:
+  gigamon-ami-http-endpoint:
     image: docker.elastic.co/observability/stream:v0.15.0
     volumes:
       - ./sample_logs:/sample_logs:ro
